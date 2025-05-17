@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            display: grid;
+            padding: 5px;
+            grid-template-columns: repeat(2,1fr);
+            gap: 0.5rem;
+            height: 500px;
+            width: 500px;
+        }
+         /* justify-items*/
+         .b1 , .b2 {
+            display: grid;
+            background-color: deepskyblue;
+            justify-items:  center;
+        }
+
+        /*justify-self*/
+        .b3{
+            background-color: plum;
+            justify-self: center ;
+        }
+        .b4{
+            background-color: plum;
+            justify-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">  
+         <!--  justify-items : ligns grid items along the inline (horizontal) axis within their grid area. -->
+          <div class="b1">A</div>
+          <div class="b2">B</div>
+   
+
+        <!-- justify-self : Aligns a grid item along the inline (horizontal) axis within its grid area. -->
+        <div class="b3">A</div>
+        <div class="b4">B</div>
+    </div>
+</body>
+</html>
